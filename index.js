@@ -15,7 +15,6 @@ app.use(cors());
 // @Routing
 app.use("/api/items", itemsRoutes);
 
-
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });

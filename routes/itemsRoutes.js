@@ -2,12 +2,13 @@
 import express from "express";
 
 // @controllers
-import { getMercadoLibreItems } from "../controllers/itemsController.js";
+import { getMercadoLibreItems, getProductDetails } from "../controllers/itemsController.js";
 
 const router = express.Router();
 
 router.get("/", getMercadoLibreItems);
 
-//router.get("/:id", getDetailsProduct);
+router.get("/:id", getProductDetails);
 
 export default router;
+
